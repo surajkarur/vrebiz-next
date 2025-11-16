@@ -7,8 +7,13 @@ const Footer = () => {
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           {/* Brand */}
           <div>
-            <img src={logo} alt="VR-eBiz Solutions" className="h-10 w-auto mb-4" />
-            <p className="text-muted-foreground text-sm">
+                    <img
+                      src="/logo-business-beyond-borders.png"
+                      onError={(e) => { e.currentTarget.src = logo; }}
+                      alt="VR-eBiz Solutions"
+                      className="h-10 w-auto mb-4"
+                    />
+                    <p className="text-muted-foreground text-sm">
               Your trusted partner for business transformation in India
             </p>
           </div>

@@ -7,7 +7,12 @@ const MinimalFooter = () => {
         <div className="grid md:grid-cols-4 gap-12 mb-12">
           {/* Brand */}
           <div className="md:col-span-2">
-            <img src={logo} alt="VR-eBiz Solutions" className="h-8 w-auto mb-6" />
+            <img
+              src="/logo-business-beyond-borders.png"
+              onError={(e) => { e.currentTarget.src = logo; }}
+              alt="VR-eBiz Solutions"
+              className="h-8 w-auto mb-6"
+            />
             <p className="text-muted-foreground text-sm font-light max-w-sm leading-relaxed">
               Boutique business consultancy empowering global enterprises to succeed in India.
             </p>
